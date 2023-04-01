@@ -1,0 +1,31 @@
+.float-container {
+  border: 3px solid #fff;
+  padding: 20px;
+}
+
+.float-child {
+  width: 45%;
+  float: left;
+  padding: 20px;
+  border: 2px solid gray;
+  min-height: 800px;
+}  
+
+button {
+  padding: 10px;
+  margin: 20px;
+  width: 150px;
+  height: 40px;
+  color: whitesmoke;
+  background-color: gray;
+  cursor: pointer;
+  transition: width 0.5s;
+  border: 4px  solid #302e3b;
+
+}
+
+button:hover {
+  padding: 10px;
+  margin: 20px;
+  width: 160px;
+}
