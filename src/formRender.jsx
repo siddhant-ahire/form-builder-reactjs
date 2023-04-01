@@ -26,20 +26,18 @@ const FormRender = () => {
     }, [])
     function saveData() {
       if(Object.keys($(fb.current)?.formRender("userData")).length > 0) {
-        console.log($(fb.current).formRender("userData"))
         setOutput($(fb.current).formRender("userData"))
       }
     }
     return (
-        <div className="px-4 sm:px-6 lg:px-8">
+        <div>
             <h1>Display Form</h1>
-            <form id="fb-render" ref={fb}></form>
+            <form ref={fb}></form>
             {Object.keys(form).length > 0 && 
             <>
               <button
               onClick={saveData}
               type="button"
-              className="ml-3 inline-flex justify-center rounded-md border border-transparent bg-cyan-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2"
               >
                 Submit Data
               </button>

@@ -31,16 +31,16 @@ const FormBuilder = () => {
       setForm({})
     }
     return (
-        <div className="px-4 sm:px-6 lg:px-8">
+        <div>
           <h1>Create Form</h1>
-          <div id="fb-editor" ref={fb} />
-          <div className="pt-5">
+          <div ref={fb} />
+          <div>
           <div>
             {Object.keys(form).length > 0 &&
               <ReactJson src={JSON.parse(form)} />
             }
           </div>
-            <div className="flex justify-end">
+            <div>
               <button
                 onClick={clearData}
                 type="button"
